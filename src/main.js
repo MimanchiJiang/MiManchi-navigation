@@ -18,7 +18,7 @@ const render = () => {
     hashMap.forEach((node, index) => {
         const $li = $(`<li>
             <div class="site">
-                <div class="logo">${node.logo[0]}${node.logo[1]}</div>
+                <div class="logo">${node.logo[0]}</div>
                     <div class="link">${simplifyUrl(node.url)}</div>
                         <div class="close">
                             <svg class="icon">
@@ -44,13 +44,13 @@ render()
 $('.addButton')
     .on('click', () => {
         let url = window.prompt('请问你要添加的网址是啥？')
-        let name = window.prompt('请问你要备注啥')
+
         if (url.indexOf('http') !== 0) {
             url = 'https://' + url
         }
 
         hashMap.push({
-            logo: name,
+            logo: simplifyUrl(url)[0].toUpperCase(),
             url: url
         });
         render()
