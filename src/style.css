@@ -17,6 +17,15 @@ background-size: cover;
 background-position: center 0;
 border: none;
 }
+@media (max-width:500px) {
+    body{background-image: url(imgs/背景.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center 0;}
+    
+}
 
 .globalHeader{
     margin: 20px;
@@ -73,10 +82,6 @@ border: none;
     flex-wrap: wrap;
     margin: 20px;
     justify-content: space-between;
-    
-    
-    
-    
 }
 @media (min-width:500px) {
     .siteList{
@@ -127,6 +132,27 @@ border: none;
     font-size: 14px;
     margin-top: 4px;
 }
+@media (max-width:500px) {
+    .siteList .site{
+    
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border: 1px solid #000;
+        border-radius: 4px;
+        padding: 20px 0;
+        position: relative;
+        cursor: pointer;
+        background: #ffffff00;
+        color: #000;
+        
+        
+    }
+    
+}
 .siteList .addButton{
     border: 1px solid #ddd;
     width: 160px;
@@ -139,6 +165,24 @@ border: none;
     border-radius: 4px;
     color: #eee;
      
+}
+
+@media (max-width:500px) {
+    .siteList .addButton{
+        border: 1px solid #000;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+        background: #ffffff00;
+        border-radius: 4px;
+        color: #000;
+        
+         
+    }
+    
 }
 .siteList .site > .close{
     position: absolute;
