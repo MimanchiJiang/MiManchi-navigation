@@ -122,7 +122,13 @@ var $siteList = $('.siteList');
 var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
-var hashMap = xObject || [];
+var hashMap = xObject || [{
+  logo: 'B',
+  url: 'https://www.bilibili.com'
+}, {
+  logo: 'Z',
+  url: 'https://www.zhihu.com/'
+}];
 
 var simplifyUrl = function simplifyUrl(url) {
   return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //删除/开头的内容
@@ -202,7 +208,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52450" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50427" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
