@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./imgs\\bg.jfif":[["bg.b1195c4c.jfif","imgs/bg.jfif"],"imgs/bg.jfif"],"./imgs\\背景.jpg":[["背景.bf7b8d61.jpg","imgs/背景.jpg"],"imgs/背景.jpg"],"_css_loader":"C:/Users/Admin/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/css-loader.js"}],"C:/Users/Admin/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./imgs\\bg.jfif":[["bg.b1195c4c.jfif","imgs/bg.jfif"],"imgs/bg.jfif"],"./imgs\\bg1.jpg":[["bg1.f6cf5c4c.jpg","imgs/bg1.jpg"],"imgs/bg1.jpg"],"_css_loader":"C:/Users/Admin/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/css-loader.js"}],"C:/Users/Admin/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50427" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63352" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
